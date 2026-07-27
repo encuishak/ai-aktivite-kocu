@@ -1,19 +1,47 @@
-# 🏃‍♂️ AI & ML Destekli Aktivite ve Sağlık Koçu
+# AI Aktivite Koçu
 
-Bu proje, kullanıcıların günlük fiziksel aktivite verilerini makine öğrenmesi (Machine Learning) ve Büyük Dil Modelleri (LLM) ile analiz ederek kişiselleştirilmiş sağlık, egzersiz ve yaşam tarzı önerileri sunan hibrit bir yapay zeka web uygulamasıdır.
+## Proje Tanımı
+AI Aktivite Koçu, kullanıcıların çeşitli aktiviteler planlamasına ve önerilerde bulunmasına yardımcı olan bir uygulamadır. Uygulama, yapay zeka destekli algoritmalar kullanarak kullanıcının ilgi alanlarına, ihtiyaçlarına ve mevcut kaynaklarına göre etkinlikler önerir.
 
-## ✨ Öne Çıkan Özellikler
+## Özellikler
+- **Kullanıcı Profili:** Kullanıcılar ilgi alanlarını ve tercihlerine göre bir profil oluşturabilir.
+- **Aktivite Önerileri:** Yapay zeka motoru, kullanıcıların girdilerine dayanarak özelleştirilmiş etkinlik önerileri sunar.
+- **Kategorilere Göre Filtreleme:** Aktiviteler; sporlar, sanat, eğitim gibi kategorilere ayrılmıştır.
+- **Takvim Entegrasyonu:** Planlanan aktiviteleri bir takvimde görüntüleme ve hatırlatıcı ayarlama imkanı.
 
-* **K-Means Segmentasyonu:** Kullanıcıların adım, aktif dakika ve hareketsiz süre verilerini analiz ederek onları otomatik olarak "Masa Başı Çalışanı", "Hafif Aktif" veya "Düzenli Sporcu" olarak profillendirir.
-* **Random Forest Regresyonu:** Manuel girilen efor verilerine (adım, aktif süre vb.) dayanarak kullanıcının gün sonunda yakacağı kaloriyi bilimsel bir doğrulukla tahmin eder.
-* **Gemini LLM Entegrasyonu:** Makine öğrenmesi algoritmalarından elde edilen istatistikleri ve segmentasyon verilerini kullanarak kullanıcıya tamamen kişiselleştirilmiş, hedefine yönelik (kilo verme, stres yönetimi vb.) motive edici günlük görevler sunar.
-* **Dinamik Veri Girişi:** Sisteme veri seti üzerinden mevcut kullanıcıları seçerek veya manuel hedefler girerek erişilebilir.
+## Kurulum
 
-## 🛠️ Kullanılan Teknolojiler
+Projeyi klonlayın:
+```bash
+git clone https://github.com/kullanici_adi/proje_adi.git
+```
 
-* **Arayüz & Web Çerçevesi:** [Streamlit](https://streamlit.io/)
-* **Veri Analizi ve Manipülasyonu:** Pandas, NumPy
-* **Makine Öğrenmesi (ML):** Scikit-Learn (K-Means, Random Forest Regressor)
-* **Büyük Dil Modeli (LLM):** Google Generative AI (Gemini 2.5 Flash)
-* **Programlama Dili:** Python 3.x
-   
+Gerekli bağımlılıkları yükleyin:
+```bash
+pip install -r requirements.txt
+```
+
+Uygulamayı başlatın:
+```bash
+streamlit run app.py
+```
+
+## Kullanım
+1. Uygulama açıldığında, kullanıcıdan bilgiler istenecek.
+2. Kullanıcı bilgileri girdikten sonra, önerilen aktiviteleri görüntüleyebilir.
+3. Kullanıcılar önerilen aktiviteleri kaydedebilir ve takvimlerine ekleyebilir.
+
+## Katkıda Bulunma
+Eğer bu projeye katkıda bulunmak isterseniz, lütfen aşağıdaki adımları izleyin:
+1. Projeyi fork'layın.
+2. Yeni bir dal oluşturun: `git checkout -b feature/YeniOzellik`
+3. Değişikliklerinizi yapın ve kaydedin: `git commit -m 'Yeni bir özellik ekledim'`
+4. Dalınızı gönderin: `git push origin feature/YeniOzellik`
+5. Bir Pull Request açın.
+
+## İletişim
+Herhangi bir sorunuz varsa, lütfen iletişime geçin:
+- **E-posta:** encuishak613@gmail.com
+
+---
+*Bu README dosyası, AI Aktivite Koçu uygulaması hakkında temel bilgilere ve kullanım talimatlarına yönlendirmektedir.*
