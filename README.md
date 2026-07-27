@@ -1,13 +1,13 @@
-# 🏃‍♂️ AI & ML Destekli Aktivite ve Sağlık Koçu
+#  AI & ML Destekli Aktivite ve Sağlık Koçu
 
-## 📌 Proje Hakkında
+##  Proje Hakkında
 Bu proje, kullanıcıların günlük aktivite verilerini analiz ederek sağlık ve fitness hedeflerine ulaşmalarını sağlayan yapay zeka destekli bir web uygulamasıdır. **Makine Öğrenmesi (ML)** algoritmaları ile kullanıcı profillemesi ve kalori tahmini yaparken, **Büyük Dil Modelleri (LLM)** kullanarak kişiselleştirilmiş, motive edici günlük tavsiyeler üretir.
 
 Uygulama, veri bilimi ve yapay zeka entegrasyonunu hızlı ve etkileşimli bir arayüzle sunmak için **Streamlit** kullanılarak geliştirilmiştir.
 
 ---
 
-## 🚀 Temel Özellikler
+##  Temel Özellikler
 
 *   **Kullanıcı Segmentasyonu (K-Means):** Kullanıcıların adım sayısı, aktif ve hareketsiz geçirdikleri sürelere göre *Masa Başı Çalışanı*, *Hafif Aktif* veya *Düzenli Sporcu* olarak 3 farklı grupta profillenmesi.
 *   **Akıllı Kalori Tahmini (Random Forest):** Mevcut verisi olmayan kullanıcılar için manuel girilen efor verileri üzerinden yakılacak kalorinin yüksek doğrulukla tahmin edilmesi.
@@ -17,7 +17,7 @@ Uygulama, veri bilimi ve yapay zeka entegrasyonunu hızlı ve etkileşimli bir a
 
 ---
 
-## 🛠️ Kullanılan Teknolojiler
+##  Kullanılan Teknolojiler
 
 *   **Arayüz & Web Çerçevesi:** [Streamlit](https://streamlit.io/)
 *   **Veri İşleme:** Pandas, NumPy
