@@ -1,13 +1,28 @@
-# AI Aktivite Koçu
+# 🏃‍♂️ AI & ML Destekli Aktivite ve Sağlık Koçu
 
-## Proje Tanımı
-AI Aktivite Koçu, kullanıcıların çeşitli aktiviteler planlamasına ve önerilerde bulunmasına yardımcı olan bir uygulamadır. Uygulama, yapay zeka destekli algoritmalar kullanarak kullanıcının ilgi alanlarına, ihtiyaçlarına ve mevcut kaynaklarına göre etkinlikler önerir.
+## 📌 Proje Hakkında
+Bu proje, kullanıcıların günlük aktivite verilerini analiz ederek sağlık ve fitness hedeflerine ulaşmalarını sağlayan yapay zeka destekli bir web uygulamasıdır. **Makine Öğrenmesi (ML)** algoritmaları ile kullanıcı profillemesi ve kalori tahmini yaparken, **Büyük Dil Modelleri (LLM)** kullanarak kişiselleştirilmiş, motive edici günlük tavsiyeler üretir.
 
-## Özellikler
-- **Kullanıcı Profili:** Kullanıcılar ilgi alanlarını ve tercihlerine göre bir profil oluşturabilir.
-- **Aktivite Önerileri:** Yapay zeka motoru, kullanıcıların girdilerine dayanarak özelleştirilmiş etkinlik önerileri sunar.
-- **Kategorilere Göre Filtreleme:** Aktiviteler; sporlar, sanat, eğitim gibi kategorilere ayrılmıştır.
-- **Takvim Entegrasyonu:** Planlanan aktiviteleri bir takvimde görüntüleme ve hatırlatıcı ayarlama imkanı.
+Uygulama, veri bilimi ve yapay zeka entegrasyonunu hızlı ve etkileşimli bir arayüzle sunmak için **Streamlit** kullanılarak geliştirilmiştir.
+
+---
+
+## 🚀 Temel Özellikler
+
+*   **Kullanıcı Segmentasyonu (K-Means):** Kullanıcıların adım sayısı, aktif ve hareketsiz geçirdikleri sürelere göre *Masa Başı Çalışanı*, *Hafif Aktif* veya *Düzenli Sporcu* olarak 3 farklı grupta profillenmesi.
+*   **Akıllı Kalori Tahmini (Random Forest):** Mevcut verisi olmayan kullanıcılar için manuel girilen efor verileri üzerinden yakılacak kalorinin yüksek doğrulukla tahmin edilmesi.
+*   **Dinamik Hedef Belirleme:** Kilo verme, stres yönetimi, uyku kalitesi veya genel sağlık gibi kişisel hedeflere göre analiz yapılması.
+*   **Generative AI Tavsiyeleri:** Google Gemini 2.5 Flash modeli ile, kullanıcının seçtiği hedefe, ML profiline ve aktivite özetine uygun; spesifik ve eyleme geçirilebilir tavsiyelerin (prompt mühendisliği ile) üretilmesi.
+*   **Etkileşimli Görselleştirme:** Metriklerin, ilerleme çubuklarının (10.000 adım hedefi) ve zaman dağılım grafiklerinin dinamik sunumu.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+*   **Arayüz & Web Çerçevesi:** [Streamlit](https://streamlit.io/)
+*   **Veri İşleme:** Pandas, NumPy
+*   **Makine Öğrenmesi:** Scikit-Learn (`KMeans`, `RandomForestRegressor`)
+*   **Yapay Zeka (LLM):** Google Generative AI (Gemini 2.5 Flash)
 
 ## Kurulum
 
